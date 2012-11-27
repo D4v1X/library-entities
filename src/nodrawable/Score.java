@@ -12,23 +12,36 @@ import java.io.Serializable;
  */
 public class Score implements Serializable {
 
-    private Integer score;
     private String  id;
+    private double time;
+    private String modo;
 
     public Score() {
-        this.score = 0;
+        this.time = 0;
         this.id = "Sin asignar";
     }
 
-    public Integer getScore() {
-        return score;
-    }
-
-    public String getScoreId() {
+    public String getId() {
         return id;
     }
 
-    public void setScoreId(String id) {
+    public void setId(String id) {
         this.id = id;
+    }
+
+    public double getTime() {
+        return time;
+    }
+
+    public void setTime(double time) {
+        this.time = time;
+    }
+
+    public String getModo() {
+        return modo;
+    }
+
+    public void setModo(String modo) {
+        this.modo = modo;
     }
 }

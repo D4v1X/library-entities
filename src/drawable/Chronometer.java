@@ -48,10 +48,9 @@ public class Chronometer implements Drawable {
 
     @Override
     public void render(Graphics g) {
-        
         g.setFont(new Font("LucidaSans", Font.PLAIN, 10));
         g.setColor(Color.WHITE);
-        g.drawString("Tiempo: "+getTime()+"", 100, 400);
+        g.drawString("Tiempo: "+getTime()+"", 100, 450);
     }
 
     @Override

@@ -7,6 +7,7 @@ package drawable;
 import drawable.movable.Ball;
 import java.awt.Color;
 import java.awt.Graphics;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -22,8 +23,8 @@ public class Boundary extends Figura implements Drawable {
     //Operaciones
     @Override
     public void render(Graphics g) {
-        g.setColor(Color.BLACK);
-        g.drawRect(this.getPosition().getX(), this.getPosition().getY(), this.getWidth(), this.getHeight());
+        ImageIcon fondo = new ImageIcon(getClass().getResource("/images/fondo.png"));
+        g.drawImage(fondo.getImage(), 0, 0, null);
     }
 
     @Override

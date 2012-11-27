@@ -14,7 +14,7 @@ import java.awt.Graphics;
  */
 public class Marcador implements Drawable {
 
-    public static final int MAX_PUNT = 9;
+    public static final int MAX_PUNT = 2;
     private int puntosIzda;
     private int puntosDcha;
 
@@ -54,8 +54,8 @@ public class Marcador implements Drawable {
         g.setColor(Color.WHITE);
         g.drawString(""+getPuntosIzda()+"", 600 / 2 - 50, 50);
         g.drawString(""+getPuntosDcha()+"", 600 / 2 + 25, 50);
-        int w = 6;
-        int h = 20;
+        int w = 5;
+        int h = 15;
         int gap = 10;
         int ini = gap / 2; // por estetica, si no seria 0
         for (int i = 0; i < 500 / (h + gap); i++) {
