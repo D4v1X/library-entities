@@ -32,7 +32,7 @@ public class Composite implements Drawable {
         //numero de Bolas
         g.setFont(new Font("LucidaSans", Font.PLAIN, 10));
         g.setColor(Color.WHITE);
-        g.drawString("Num Balls = "+numBalls+"", 400, 450);
+        g.drawString("Num Balls = "+numBalls+"", 325, 10);
     }
 
     @Override

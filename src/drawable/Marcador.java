@@ -14,11 +14,11 @@ import java.awt.Graphics;
  */
 public class Marcador implements Drawable {
 
-    public static final int MAX_PUNT = 2;
+    public static final int MAX_PUNT = 9;
     private int puntosIzda;
     private int puntosDcha;
 
-    public void initMarcador() {
+    public final void initMarcador() {
         puntosIzda = 0;
         puntosDcha = 0;
     }
@@ -44,7 +44,7 @@ public class Marcador implements Drawable {
     }
 
     public boolean acabado() {
-        return puntosDcha == MAX_PUNT || puntosIzda == MAX_PUNT;
+        return puntosDcha >= MAX_PUNT || puntosIzda >= MAX_PUNT;
     }
 
     @Override

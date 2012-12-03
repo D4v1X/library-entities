@@ -47,7 +47,7 @@ public class Brick extends Figura implements Movable {
             g.setColor(Color.WHITE);
         }
         if (dureza == 2) {
-            g.setColor(Color.RED);
+            g.setColor(Color.BLUE);
         }
         g.fillRect(this.getPosition().getX(), this.getPosition().getY(), this.getWidth(), this.getHeight());
     }
